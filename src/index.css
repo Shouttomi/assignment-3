@@ -1,17 +1,20 @@
+:root{
+    --transition: all 0.3s linear;
+  --clr-black: rgb(69, 65, 65);
+  --clr-white: hsl(0, 0%, 100%);
+
+}
+
 .buttonclass{
     width: 20rem;
     
 }
 
-.fullwidth{
-    width: 20rem;
-    text-align: left;
-    border-top-width: 0px;
-    border-bottom-width: 1.5px;
-    background-color: rgb(255, 255, 255);
-    border-left-width: 0px;
-    border-right-width: 0px;
+*{
+    box-sizing: border-box;
 }
+
+
 
 .listbox{
     border-width: 3px;
@@ -30,20 +33,7 @@
     
 }
 
-.list{
-    width: 20.35rem;
-    border-width: 3px;
-    border-style: outset;
-    border-color: rgb(86, 80, 80);
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    position: relative;
-    background-color: white;
-    text-align: left;
-    margin: 20px 0px;
-}
+
 
 .listnone{
     display: none;
@@ -111,3 +101,39 @@
     height: 0.5rem;
 }
 
+button {
+   transition: var(--transition);
+   cursor: pointer;
+ }
+ 
+ button:hover {
+   background: var(--clr-black);
+   color: var(--clr-white);
+ }
+
+
+ .fullwidth{
+    width: 20rem;
+    text-align: left;
+    border-top-width: 0px;
+    border-bottom-width: 1.5px;
+    background-color: rgb(255, 255, 255);
+    border-left-width: 0px;
+    border-right-width: 0px;
+}
+
+
+.list{
+    width: 20.35rem;
+    border-width: 3px;
+    border-style: outset;
+    border-color: rgb(86, 80, 80);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+    background-color: white;
+    text-align: left;
+    margin: 20px 0px;
+}
