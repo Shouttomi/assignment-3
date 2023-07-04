@@ -36,7 +36,10 @@
     border-style: outset;
     border-color: rgb(86, 80, 80);
     border-radius: 4px;
-
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
     background-color: white;
     text-align: left;
     margin: 20px 0px;
@@ -88,3 +91,23 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 4rem;
 }
+
+.botharrows{
+    display: flex;
+    flex-direction:column-reverse;
+    position: absolute;
+    right: 0%;
+    top: 25%;
+     
+}
+.uparrow{
+   
+    height: 0.5rem;
+
+}
+
+.downarrow{
+    
+    height: 0.5rem;
+}
+

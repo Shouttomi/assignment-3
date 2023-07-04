@@ -1,20 +1,9 @@
 import Data from "./assets";
 import { useState } from "react";
 import Buttons from "./Buttons";
+import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
+import ArrowDropUpIcon from "@mui/icons-material/ArrowDropUp";
 import "./index.css";
-
-/* const Data = [
-  { id: 1, Name: "Shirt 1", Price: 100 },
-  { id: 2, Name: "Shirt 2", Price: 120 },
-  { id: 3, Name: "Shirt 3", Price: 150 },
-  { id: 4, Name: "Shirt 4", Price: 160 },
-  { id: 5, Name: "Shirt 5", Price: 170 },
-  { id: 6, Name: "Shirt 6", Price: 180 },
-  { id: 7, Name: "Trouser 1", Price: 170 },
-  { id: 8, Name: "Trouser 2", Price: 190 },
-  { id: 9, Name: "Trouser 3", Price: 200 },
-  { id: 10, Name: "Trouser 4", Price: 270 },
-]; */
 
 const App = () => {
   const [Changer, setChanger] = useState(Data[2]);
@@ -37,10 +26,22 @@ const App = () => {
             helper2();
           }}
         >
-          <h4>List of Items</h4>
+          <h4>List of Items </h4>
+
+          
+
+          <main className="botharrows">
+            <span className="downarrow">
+              <ArrowDropDownIcon></ArrowDropDownIcon>
+            </span>{" "}
+            <span className="uparrow">
+              <ArrowDropUpIcon></ArrowDropUpIcon>
+            </span>
+          </main>
+          
         </button>
 
-        <section className={List===true?"listbox":"listnone"}>
+        <section className={List === true ? "listbox" : "listnone"}>
           {Data.map((item) => {
             return (
               <Buttons
